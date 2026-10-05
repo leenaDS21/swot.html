@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحليل SWOT - لينا الدوسري</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+background: #0f172a;
+font-family: 'Cairo', sans-serif;
+color: #f8fafc;
+padding: 40px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.container {
+width: 100%;
+max-width: 1100px;
+background: #1e293b;
+padding: 40px;
+border-radius: 24px;
+border: 1px solid #334155;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+text-align: center;
+margin-bottom: 35px;
+}
+
+.header h1 {
+color: #f1f5f9;
+font-size: 36px;
+font-weight: 800;
+margin-bottom: 8px;
+}
+
+.header .subtitle {
+color: #94a3b8;
+font-size: 18px;
+font-weight: 600;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 24px;
+direction: ltr; /* لترتيب الكروت من اليسار لليمين: S -> W -> O -> T */
+}
+
+.box {
+direction: rtl; /* لإعادة محاذاة النص العربي داخل الكرت */
+padding: 28px;
+border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+display: flex;
+flex-direction: column;
+}
+
+.box-title {
+font-size: 22px;
+font-weight: 700;
+margin-bottom: 18px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+padding-bottom: 12px;
+}
+
+.box-title .letter {
+font-size: 26px;
+font-weight: 800;
+background: rgba(255, 255, 255, 0.2);
+width: 42px;
+height: 42px;
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* ألوان الأقسام بأسلوب عصري جذاب */
+.S { background: linear-gradient(135deg, #064e3b, #047857); }
+.W { background: linear-gradient(135deg, #7f1d1d, #b91c1c); }
+.O { background: linear-gradient(135deg, #1e3a8a, #1d4ed8); }
+.T { background: linear-gradient(135deg, #78350f, #b45309); }
+
+ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+ul li {
+position: relative;
+padding-right: 22px;
+margin-bottom: 12px;
+font-size: 15px;
+line-height: 1.7;
+color: #e2e8f0;
+}
+
+ul li::before {
+content: "•";
+position: absolute;
+right: 0;
+color: rgba(255, 255, 255, 0.8);
+font-size: 20px;
+line-height: 1;
+}
+
+.skills {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+margin: 12px 0;
+}
+
+.skills span {
+background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(5px);
+color: #ffffff;
+padding: 4px 12px;
+border-radius: 8px;
+font-size: 13px;
+font-weight: 700;
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+text-align: center;
+margin-top: 35px;
+padding-top: 20px;
+border-top: 1px solid #334155;
+color: #cbd5e1;
+}
+
+.footer .name {
+font-size: 20px;
+font-weight: 700;
+color: #38bdf8;
+}
+
+.footer .info {
+font-size: 15px;
+color: #94a3b8;
+margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+.grid {
+grid-template-columns: 1fr;
+}
+}
+future-plan {
+margin-top: 30px;
+background: rgba(255, 255, 255, 0.05);
+padding: 25px;
+border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.future-plan h2 {
+font-size: 20px;
+color: #38bdf8;
+margin-bottom: 15px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+padding-bottom: 10px;
+}
+
+.future-plan ul li {
+font-size: 15px;
+line-height: 1.8;
+margin-bottom: 10px;
+color: #f1f5f9;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1> تحليل SWOT الشخصي</h1>
+<div class="subtitle">للتجربة التدريبية في الهيئة الملكية للجبيل وينبع</div>
+</div>
+
+<div class="grid">
+
+<!-- S: نقاط القوة (Top-Left) -->
+<div class="box S">
+<div class="box-title">
+<span>نقاط القوة (Strengths)</span>
+<span class="letter">S</span>
+</div>
+<ul>
+<li>امتلاك معرفة جيدة في لغات البرمجة وتطبيقها عملياً:</li>
+</ul>
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>C#</span>
+<span>C++</span>
+<span>SQL</span>
+</div>
+<ul>
+<li>القدرة على التعلم السريع والتكيف مع بيئة العمل.</li>
+<li>اكتساب خبرة عملية في مجال الدعم الفني وحل المشكلات التقنية.</li>
+<li>تطوير مهارات البرمجة من خلال التطبيق العملي.</li>
+<li>التعلم الذاتي واكتساب معرفة إضافية في مجال الشبكات.</li>
+<li>الالتزام والرغبة المستمرة في تطوير المهارات.</li>
+</ul>
+</div>
+
+<!-- W: نقاط الضعف (Top-Right) -->
+<div class="box W">
+<div class="box-title">
+<span>نقاط الضعف (Weaknesses)</span>
+<span class="letter">W</span>
+</div>
+<ul>
+<li>الحاجة إلى تطوير الخبرة العملية في بعض لغات وتقنيات البرمجة التي لم يتم تعلمها بشكل كافٍ.</li>
+<li>الحاجة إلى زيادة الخبرة في إدارة الشبكات والبنية التحتية.</li>
+<li>محدودية الخبرة في بعض الأدوات والأنظمة المستخدمة في بيئات العمل الاحترافية.</li>
+<li>الحاجة إلى ممارسة مشاريع برمجية أكبر وأكثر تكاملاً.</li>
+</ul>
+</div>
+
+<!-- O: الفرص (Bottom-Left) -->
+<div class="box O">
+<div class="box-title">
+<span>الفرص (Opportunities)</span>
+<span class="letter">O</span>
+</div>
+<ul>
+<li>فرصة التعلم المباشر من المختصين في الهيئة الملكية واكتساب خبرات عملية.</li>
+<li>تطوير مهارات تجمع بين البرمجة والدعم الفني والشبكات.</li>
+<li>الاستفادة من دعم الإدارة وتشجيع التعلم خارج نطاق الخطة التدريبية.</li>
+<li>بناء خبرة تؤهل للعمل في مجالات تقنية متنوعة.</li>
+<li>التعرف على بيئة العمل الاحترافية ومتطلبات القطاع التقني.</li>
+</ul>
+</div>
+
+<!-- T: التهديدات (Bottom-Right) -->
+<div class="box T">
+<div class="box-title">
+<span>التهديدات (Threats)</span>
+<span class="letter">T</span>
+</div>
+<ul>
+<li>سرعة تطور التقنيات والحاجة المستمرة لتحديث المهارات والمعرفة.</li>
+<li>المنافسة العالية في سوق العمل بمجال علوم الحاسب وتقنية المعلومات.</li>
+<li>تعدد المجالات التقنية قد يؤدي إلى تشتت التركيز دون تحديد مسار واضح.</li>
+<li>الحاجة إلى مواكبة الشهادات المهنية والتقنيات الحديثة.</li>
+</ul>
+</div>
+
+</div>
+<!-- قسم الخطة المستقبلية -->
+<div class="future-plan">
+<h2>الخطة المستقبلية المقترحة خلال فترة التدريب خارج الخطة التدريبية</h2>
+<ul>
+<li><strong>إتقان بناء لوحات البيانات (Dashboards):</strong> التعلم والتطبيق العملي لتصميم وإنشاء لوحات قيادة تفاعلية لعرض البيانات وتحليلها بفاعلية.</li>
+<li><strong>التوسع في محاكاة الشبكات (Cisco Packet Tracer):</strong> اكتساب مهارات تطبيقية في تصميم وتعديل الشبكات والربط بين الأجهزة والأنظمة.</li>
+</ul>
+</div>
+
+
+<div class="footer">
+<div class="name">لينا الدوسري</div>
+<div class="info">تخصص: برمجة - علوم حاسب | جهة التدريب: الهيئة الملكية للجبيل وينبع</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
